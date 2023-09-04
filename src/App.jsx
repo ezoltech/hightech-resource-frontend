@@ -1,10 +1,17 @@
 
+// import { Outlet } from "react-router-dom"
+import { NavBar } from "./Components/NavBar"
+import  Signup  from "./Components/Signup"
+
 
 function App() {
 
   return (
    <div className="app">
-      <h2>hello world</h2>
+      {/* <NavBar /> */}
+      {/* <Outlet /> */}
+      <Signup />
+
    </div>
   )
 }
