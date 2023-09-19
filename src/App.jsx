@@ -1,19 +1,18 @@
-
 // import { Outlet } from "react-router-dom"
-import { NavBar } from "./Components/NavBar"
-import  Signup  from "./Components/Signup"
-
+import { NavBar } from "./Components/NavBar";
+import { Overview } from "./Components/Overview";
+import Signup from "./Components/Signup";
+import { TopMenu } from "./Components/TopMenu";
 
 function App() {
-
   return (
-   <div className="app">
+    <div className="app">
       {/* <NavBar /> */}
       {/* <Outlet /> */}
-      <Signup />
-
-   </div>
-  )
+      {/* <Signup /> */}
+      <Overview />
+    </div>
+  );
 }
 
-export default App
+export default App;

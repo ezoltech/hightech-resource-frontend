@@ -18,7 +18,7 @@ export const NavBar = () => {
         </span>
       </Navbar.Brand>
       <div className="flex md:order-2">
-        <Button>
+        <Button href="/">
           Login
         </Button>
         <Navbar.Toggle />
