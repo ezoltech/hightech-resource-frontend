@@ -1,4 +1,5 @@
 // import { Outlet } from "react-router-dom"
+import Login from "./Components/Login";
 import { NavBar } from "./Components/NavBar";
 import { Overview } from "./Components/Overview";
 import Signup from "./Components/Signup";
@@ -9,7 +10,9 @@ function App() {
     <div className="app">
       {/* <NavBar /> */}
       {/* <Outlet /> */}
-      <Signup />
+    <Signup/>
+      <Login />
+
       {/* <Overview /> */}
     </div>
   );
