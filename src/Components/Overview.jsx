@@ -3,7 +3,11 @@ import { TopMenu } from "./TopMenu";
 import { Avatar, Button, Card } from "flowbite-react";
 import { AiOutlineLike } from "react-icons/ai";
 import { FaComments } from "react-icons/fa";
+import toast from "react-hot-toast";
 export const Overview = () => {
+  function likePost() {
+    toast.success("liked");
+  }
   return (
     <div className="flex flex-col sm:flex-row">
       <button
@@ -145,10 +149,10 @@ export const Overview = () => {
               first of 5 chapters for this course...
             </p>
             <div className="flex flex-row gap-2">
-              <Button>Handout</Button>
-              <Button>C++</Button>
-              <Button>Java </Button>
-              <Button>Micro</Button>
+              <Button color="gray">Handout</Button>
+              <Button color="gray">C++</Button>
+              <Button color="gray">Java</Button>
+              <Button color="gray">DataBase</Button>
             </div>
 
             <ul className="flex flex-row gap-4">
@@ -162,12 +166,15 @@ export const Overview = () => {
 
               <li className="flex flex-row">
                 {" "}
-                <AiOutlineLike className="w-[20px] h-[20px]" />
+                <AiOutlineLike
+                  className="w-[20px] h-[20px] cursor-pointer"
+                  onClick={likePost}
+                />
                 100 likes
               </li>
               <li className="flex flex-row">
                 {" "}
-                <FaComments className="w-[20px] h-[20px]" />
+                <FaComments className="w-[20px] h-[20px] cursor-pointer" />
                 12 comments
               </li>
             </ul>
@@ -182,10 +189,10 @@ export const Overview = () => {
               first of 5 chapters for this course...
             </p>
             <div className="flex flex-row gap-2">
-              <Button>Handout</Button>
-              <Button>C++</Button>
-              <Button>Java </Button>
-              <Button>Micro</Button>
+              <Button color="gray">Handout</Button>
+              <Button color="gray">C++</Button>
+              <Button color="gray">Java</Button>
+              <Button color="gray">DataBase</Button>
             </div>
 
             <ul className="flex flex-row gap-4">
@@ -199,12 +206,15 @@ export const Overview = () => {
 
               <li className="flex flex-row">
                 {" "}
-                <AiOutlineLike className="w-[20px] h-[20px]" />
+                <AiOutlineLike
+                  className="w-[20px] h-[20px] cursor-pointer"
+                  onClick={likePost}
+                />
                 100 likes
               </li>
               <li className="flex flex-row">
                 {" "}
-                <FaComments className="w-[20px] h-[20px]" />
+                <FaComments className="w-[20px] h-[20px] cursor-pointer" />
                 12 comments
               </li>
             </ul>
@@ -219,10 +229,10 @@ export const Overview = () => {
               first of 5 chapters for this course...
             </p>
             <div className="flex flex-row gap-2">
-              <Button>Handout</Button>
-              <Button>C++</Button>
-              <Button>Java </Button>
-              <Button>Micro</Button>
+              <Button color="gray">Handout</Button>
+              <Button color="gray">C++</Button>
+              <Button color="gray">Java</Button>
+              <Button color="gray">DataBase</Button>
             </div>
 
             <ul className="flex flex-row gap-4">
@@ -236,12 +246,15 @@ export const Overview = () => {
 
               <li className="flex flex-row">
                 {" "}
-                <AiOutlineLike className="w-[20px] h-[20px]" />
+                <AiOutlineLike
+                  className="w-[20px] h-[20px] cursor-pointer"
+                  onClick={likePost}
+                />
                 100 likes
               </li>
               <li className="flex flex-row">
                 {" "}
-                <FaComments className="w-[20px] h-[20px]" />
+                <FaComments className="w-[20px] h-[20px] cursor-pointer" />
                 12 comments
               </li>
             </ul>
