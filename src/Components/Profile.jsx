@@ -48,8 +48,12 @@ const Profile = () => {
             </div>
 
 
-            <div className='card flex w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-4/6 ml-auto mr-auto mt-12 h-auto rounded-md shadow-lg border-2 shadow-black-500' >
-                <h1 className='m-8'>upload</h1>
+            <div className='card flex justify-center w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-4/6 ml-auto mr-auto mt-12 h-32 rounded-md shadow-lg border-2 shadow-black-500' >
+                <form action="">
+                    <label for="files" class="btn">Upload</label>
+                    <input id="files" className='invisible' type="file"></input>
+                </form>
+                {/* <button type='fil'>upload</button> */}
             </div>
 
             <div className='card flex w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-4/6 ml-auto mr-auto mt-12 h-auto rounded-md shadow-lg border-2 shadow-black-500'>
