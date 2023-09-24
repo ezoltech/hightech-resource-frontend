@@ -3,7 +3,8 @@
 import { NavBar } from "./Components/NavBar"
 import Signup from "./Components/Signup"
 import Profile from "./Components/Profile"
-
+import SideBar from "./Components/SideBar"
+// import Upload from "./Components/Upload"
 
 function App() {
 
@@ -13,6 +14,8 @@ function App() {
       {/* <Outlet /> */}
       <Signup />
       <Profile />
+      <SideBar />
+      {/* <Upload /> */}
     </div>
   )
 }
