@@ -58,11 +58,11 @@ const Profile = () => {
 
             <div className='card flex w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-4/6 ml-auto mr-auto mt-12 h-auto rounded-md shadow-lg border-2 shadow-black-500'>
                 <div className='m-2'>
-                    <h1>project</h1>
-                    <h1>Empowering Student with collaborative platform</h1>
-                    <p>Student practice at their own place.first filling in gaps in their understanding and then acclerating their learining</p>
-                    <h1>Empowering student with collabrative platform</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem itaque molestiae recusandae eaque id fugit earum explicabo inventore laborum ratione voluptatum facilis ipsa perferendis ipsam, expedita consequuntur est? Expedita, nostrum!</p>
+                    <h1 className='font-bold'>project</h1>
+                    <h1 className='mt-4 font-bold'>Empowering Student with collaborative platform</h1>
+                    <p className='mt-4'>Student practice at their own place.first filling in gaps in their <br /> understanding and then acclerating their learining</p>
+                    <h1 className='mt-4 font-bold'>Empowering student with collabrative platform</h1>
+                    <p className='mt-4'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem itaque molestiae recusandae eaque id fugit earum explicabo inventore laborum ratione voluptatum facilis ipsa perferendis ipsam, expedita consequuntur est? Expedita, nostrum!</p>
                 </div>
             </div>
 
