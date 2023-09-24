@@ -1,5 +1,5 @@
 import React from "react";
-import CardContent from "../cardContent";
+import CardContent from "../CardContent";
 import { Cards } from "./Cards";
 import { Card, Button } from "flowbite-react";
 export const Landing = () => {
