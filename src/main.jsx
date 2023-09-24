@@ -4,28 +4,26 @@ import App from "./App";
 import "./index.css";
 import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 import Home from "./Pages/Home";
-
-// import Explore from "./Pages/Explore";
-// import Sample from "./Pages/About";
-// import About from "./Pages/About";
+import About from "./Pages/About";
+import Explore from "./Pages/Explore";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    Children: [
+    children: [
       {
         path: "/",
         element: <Home />,
       },
-      // {
-      //   path: "/About",
-      //   element: <About />,
-      // },
-      // {
-      //   path: "/",
-      //   element: <Explore />,
-      // },
+      {
+        path: "/About",
+        element: <About />,
+      },
+      {
+        path: "/Explore",
+        element: <Explore />,
+      },
     ],
   },
 ]);
