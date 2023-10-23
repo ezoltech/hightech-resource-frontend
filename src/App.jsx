@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet,Routes, Route } from "react-router-dom";
 import { NavBar } from "./Components/NavBar";
 import { Overview } from "./Components/Overview";
 import Signup from "./Components/Signup";
@@ -12,13 +12,13 @@ function App() {
   return (
     <div className="app">
       <NavBar />
-      {/* <Routes>
+      { <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/" element={<Home />} />
         <Route path="/Signup" element={<Signup />} />
         <Route path="/explore" element={<Explore />} />
         <Route path="/about" element={<About />} />
-      </Routes> */}
+      </Routes> }
       <Outlet />
       <Footer />
     </div>

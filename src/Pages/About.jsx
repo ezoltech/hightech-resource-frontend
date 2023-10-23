@@ -2,7 +2,7 @@ import React from "react";
 import { Bounce, Slide } from "react-reveal/Slide";
 const About = () => {
   return (
-    <div className="flex flex-col gap-5">
+    <div className="flex flex-col gap-3 mt-80">
       <div className="">
         <h1>hello world</h1>
       </div>
