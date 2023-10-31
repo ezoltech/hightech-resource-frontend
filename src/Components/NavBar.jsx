@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { Button } from "flowbite-react";
 import { DropDown } from "./dropDown";
+
 export const NavBar = () => {
   const [nav, setnav] = useState(false);
   const handleNav = () => {
@@ -16,8 +17,8 @@ export const NavBar = () => {
           className="absolute right-5 z-[99] md:hidden mt-8"
         />
         {nav ? (
-          <div className="sticky top-0 w-full h-screen bg-white/90 flex flex-col justify-center z-20">
-            <div className="flex justify-center mb-16 font-bold text-4xl">
+          <div className="sticky top-23 w-full h-screen bg-white/90 flex flex-col justify-center z-20">
+            <div className="flex justify-center mt-4 mb-6 font-bold text-4xl">
               {" "}
               RES SHARE
             </div>
@@ -61,8 +62,7 @@ export const NavBar = () => {
             <Button
               className="py-3 px-16 mr-2 mb-2 text-sm font-medium text-black focus:outline-none bg-green-100 border rounded-md border-black hover:bg-green-400 hover:text-white hover:border-hidden "
               size="xs"
-              href="/Signup"
-            >
+              href="/Signup">
               Log in
             </Button>
             {/* <DropDown /> */}
@@ -70,8 +70,7 @@ export const NavBar = () => {
 
           <div
             className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-            id="navbar-cta"
-          >
+            id="navbar-cta">
             <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-green-100 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li>
                 <a

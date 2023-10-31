@@ -2,6 +2,7 @@ import React from "react";
 import CardContent from "../cardContent";
 import { Cards } from "./Cards";
 import { Card, Button } from "flowbite-react";
+import Slide from "react-reveal/Fade";
 export const Landing = () => {
   const contents = [
     {
@@ -28,33 +29,41 @@ export const Landing = () => {
   return (
     <>
       <div className="p-10 m-5 ">
-        <div className="flex justify-center text-start mb-10">
+        <div className="flex justify-center text-center md:text-start mb-10">
           <p className="mb-12  font-medium text-black lg:text-6xl  dark:text-gray-400 ">
-            <span className="text-2xl font-bold lg:font-normal lg:text-3xl mb-10">
+            <span className=" text-center w-full text-2xl font-bold lg:font-normal lg:text-3xl">
               Empowering Students
             </span>{" "}
-            <br /> <br />
+            <br /><br />
             Enhance your learning experience with easy <br /> access to a
             variety of college resources
           </p>
         </div>
-        <div className="flex flex-wrap gap-40 items-center justify-center">
+
+        
+
+          <div className="flex flex-wrap items-center justify-between">
           {CardContent.map((Content) => (
+          <Slide>
             <Cards
               key={Content.id}
               icon={Content.icon}
               title={Content.title}
               disc={Content.disc}
             />
+            </Slide>
           ))}
         </div>
+        
+
+        
       </div>
 
       {contents.map((content, index) => (
         <Card reverse={index % 2 == 0 ? true : false} content={content} />
       ))}
 
-      <section className="h-[70vh] bg-gradient-to-r from-green-100 via-green-300 to-green-100 flex justify-center items-center mt-60">
+      <section className="h-[70vh] bg-gradient-to-r from-green-100 via-green-300 to-green-100 flex justify-center items-center mt-20">
         <div>
           <h3 className="text-center text-5xl font-semibold">
             Ready to get started
